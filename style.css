@@ -12,31 +12,122 @@ body{
 .container{
     max-width: 1140px;
     margin: 40px auto;
-    border: 1px solid green;
 }
+
+.btn-primary{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    font-size: 20px;
+}
+
 .header{
+    height: 1095px;
+    background: rgba(255, 144, 14, 0.10);
+    /*background-image: url('images/banner.png');
+    background-size: 1080px  525px;
+    background-repeat: no-repeat;
+    position: bottom;*/
+}
+
+/*     style Navbar  */
+nav{
+    padding: 40px 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header h1{
+nav h1{
     font-size: 34px;
     color: #131313;
     text-align: center;
     font-weight: 800;
 }
-.header ul{
+nav ul{
     display: flex;
     align-items: center;
 
 }
-.header ul li{
+nav ul li{
     list-style: none;
-    margin: 0px 40px;
+    margin-left: 60px;
 }
-.header ul li a{
+nav ul li a{
     color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*    style Banner   */
+
+.banner{
+    margin: 80px auto;
+    text-align: center;
+   
+}
+
+.banner-title{
+    margin: 0px auto;
+    width: 650px;
+    color: #131313;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner-description{
+    margin: 0px auto;
+    width: 650px;
+    color: #727272;
     font-size: 18px;
     font-weight: 400;
-    text-decoration: none;
+    margin-bottom: 35px;
+}
+
+.banner-image img{
+    width: 1080px;
+    height: 525px;
+    margin: 50px 0px 0px 0px;
+}
+
+/*    style  Features   */
+
+.features{
+    padding: 50px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.feature-image img{
+    width: 255px;
+    min-height: 255px;
+}
+
+.feature-content{
+    gap: 100px;
+}
+.features .feature-title{
+    width: 350px;
+    font-size: 35px;
+    color: #727272;
+    font-weight: 500;
+}
+
+.features .feature-description{
+    margin: 20px 0px;
+    color: #727272;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
 }
