@@ -204,6 +204,19 @@ nav ul li a{
    
 }
 
+/* footer   style    */
+
+.foot{
+    margin: 50px 0px;
+    padding: 30px 0px;
+    text-align: center;
+    border-radius: 8px;
+    background: #e4c197;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 
 /*Responsive for Mobile */
@@ -253,4 +266,12 @@ nav ul li a{
         flex-direction: column;
     }
 
+}
+
+/*   Responsive Footer   */
+
+@media screen and (max-width: 576px){
+    .foot{
+        font-size: 14px;
+    }
 }
