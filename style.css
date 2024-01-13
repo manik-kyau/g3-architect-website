@@ -16,11 +16,12 @@ body{
 
 .btn-primary{
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 8px;
     background: #FF900E;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .header{
@@ -56,7 +57,7 @@ nav ul li{
 }
 nav ul li a{
     color: #424242;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
@@ -69,9 +70,11 @@ nav ul li a{
    
 }
 
+.banner-content{
+    padding: 0px 250px;
+}
+
 .banner-title{
-    margin: 0px auto;
-    width: 650px;
     color: #131313;
     font-size: 48px;
     font-weight: 800;
@@ -79,8 +82,6 @@ nav ul li a{
 }
 
 .banner-description{
-    margin: 0px auto;
-    width: 650px;
     color: #727272;
     font-size: 18px;
     font-weight: 400;
@@ -130,4 +131,33 @@ nav ul li a{
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
+}
+
+/*Responsive for Mobile */
+@media screen and (max-width: 576px) {
+    .header,  .banner-content, .features{
+        padding: 20px;
+    }
+
+    nav{
+        padding: 0px;
+    }
+    nav, .features{
+        flex-direction: column;
+    }
+    .header, .banner-title, .banner-image img, .banner-drescription, .feature-image, 
+    .feature-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    ul{
+        margin: 20px auto;
+    }
+    ul>li{
+        margin: 0px 1px;
+    }
+    ul li a{
+        font-size: 16px;
+    }
 }
