@@ -94,9 +94,9 @@ nav ul li a{
     margin: 50px 0px 0px 0px;
 }
 
-/*    style  Features   */
+/*    style  Team section   */
 
-.features{
+.teams{
     padding: 50px;
     margin: 0px auto;
     display: flex;
@@ -104,28 +104,28 @@ nav ul li a{
     gap: 70px;
 }
 
-.feature-image{
+.team-image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 
-.feature-image img{
+.team-feature-image img{
     width: 255px;
     min-height: 255px;
 }
 
-.feature-content{
+.team-content{
     gap: 100px;
 }
-.features .feature-title{
+.teams .team-title{
     width: 350px;
     font-size: 35px;
     color: #727272;
     font-weight: 500;
 }
 
-.features .feature-description{
+.teams .team-description{
     margin: 20px 0px;
     color: #727272;
     font-size: 18px;
@@ -133,20 +133,90 @@ nav ul li a{
     text-align: justify;
 }
 
+/*      style Eatures Section     */
+
+
+.facts .facts-title{
+    color: #131313;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.facts .facts-description{
+    width: 410px;
+    color: #727272;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.facts-image{
+    margin: 50px 0px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact-icon{
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+}
+.fact-icon h2{
+    margin: 15px;
+}
+
+
+
+.sponspors{
+    margin: 100px 0px;
+}
+.sponspors-content{
+    margin: 0px auto;
+    width: 500px;
+    text-align: center;
+}
+
+.sponspors-content .title{
+    Our Sponspors
+    color: #131313;
+    font-size: 35px;
+    font-weight: 800;
+}
+.sponspors-content .description{
+    color: #727272;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.sponspors-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+}
+.sponspors-logo img{
+    width: 170px;
+    height: 50px;
+   
+}
+
+
+
 /*Responsive for Mobile */
 @media screen and (max-width: 576px) {
-    .header,  .banner-content, .features{
+    .header, nav, .banner-content, .teams{
         padding: 20px;
     }
 
-    nav{
-        padding: 0px;
-    }
-    nav, .features{
+    nav, .teams, .facts-image{
         flex-direction: column;
     }
-    .header, .banner-title, .banner-image img, .banner-drescription, .feature-image, 
-    .feature-content{
+    .header, .banner-title, .banner-image img, .banner-drescription, .team-image img, 
+    .team-content, .facts{
         width: 100%;
         height: 100%;
     }
@@ -160,4 +230,27 @@ nav ul li a{
     ul li a{
         font-size: 16px;
     }
+    .team-image{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .facts{
+        margin: 0px auto;
+    }
+    .facts-image{
+        gap: 20px;
+    }
+}
+
+/*  Responsive sponspores   */
+
+@media screen and (max-width: 576px){
+    .sponspors-content{
+        width: 100%;
+    }
+
+    .sponspors-logo{
+        width: 100%;
+        flex-direction: column;
+    }
+
 }
