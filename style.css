@@ -35,13 +35,13 @@ body{
 
 /*     style Navbar  */
 nav{
-    padding: 40px 170px;
+    padding: 40px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav h1{
-    font-size: 34px;
+    font-size: 35px;
     color: #131313;
     text-align: center;
     font-weight: 800;
@@ -53,12 +53,12 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 nav ul li a{
     color: #424242;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -87,6 +87,7 @@ nav ul li a{
     font-weight: 400;
     margin-bottom: 35px;
 }
+
 
 .banner-image img{
     width: 1080px;
@@ -293,27 +294,25 @@ nav ul li a{
 
 /*Responsive for Mobile */
 @media screen and (max-width: 576px) {
-    .header, nav, .banner-content, .teams{
+    .header, nav,.banner-content, .teams{
         padding: 20px;
     }
 
-    nav, .teams, .facts-image{
+    nav, .teams, .sponspors-logo, .facts-image , .features{
         flex-direction: column;
     }
-    .header, .banner-title, .banner-image img, .banner-drescription, .team-image img, 
+   .header, .banner-title,.ten-years-badge, .banner-image img,
+    .banner-drescription,ul li, .team-image img, 
     .team-content, .facts{
         width: 100%;
         height: 100%;
     }
 
-    ul{
-        margin: 20px auto;
-    }
-    ul>li{
-        margin: 0px 1px;
+    ul li{
+        margin-left: 0px;
     }
     ul li a{
-        font-size: 16px;
+        font-size: 12px;
     }
     .team-image{
         grid-template-columns: repeat(2,1fr);
@@ -333,9 +332,8 @@ nav ul li a{
         width: 100%;
     }
 
-    .sponspors-logo{
+    .sponspors-logo, .columns img{
         width: 100%;
-        flex-direction: column;
     }
 
 }
